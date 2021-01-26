@@ -6,7 +6,7 @@ $black: #000;
 $gray: rgb(105, 105, 105);
 $light-gray: rgb(245, 245, 245);
 $text-main: #1b1b1b;
-$text-light: #555555;
+$text-light: #424242;
 $white: #fff;
 *,
 ::before,
@@ -227,21 +227,20 @@ footer {
   animation: landingFadeIn 2s ease forwards 0.3s;
 }
 .landing {
-  height: 92vh;
+  height: 82vh;
   background-color: $primary;
   display: flex;
   position: relative;
   justify-content: space-around;
   align-items: center;
   &::before {
-    content: "";
+    content: url("../images/wave.svg");
     position: absolute;
-    bottom: -100px;
-    left: -100px;
-    width: 200px;
-    height: 200px;
-    background: $secondary;
-    border-radius: 50%;
+    background-color: white;
+    width: 100%;
+    display: block;
+    bottom: 0;
+    height: 0;
   }
 }
 .landing-content {
@@ -251,11 +250,12 @@ footer {
   align-items: flex-start;
 }
 .landing-services {
-  margin-bottom: 40px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-size: 1.6rem;
   color: $white;
   font-weight: bold;
-  line-height: 2rem;
+  line-height: 1.9rem;
 }
 .advantages {
   display: flex;
@@ -286,7 +286,7 @@ footer {
 .about {
   display: flex;
   width: 60%;
-  margin: 5rem auto;
+  margin: 7rem auto;
   align-items: center;
   min-height: 40vh;
 }
@@ -312,23 +312,20 @@ footer {
 .map {
   margin-top: 6rem;
   display: flex;
-  position: relative;
   & iframe {
     border: 0;
     min-height: 600px;
     width: 100%;
   }
+}
+.map-ns {
+  position: relative;
   &::before {
-    content: "";
+    content: url("../images/NSonly.svg");
     display: block;
     position: absolute;
-    width: 200px;
-    height: 200px;
-    background: $secondary;
-    border-radius: 50%;
-    z-index: -1;
-    top: -100px;
-    right: -100px;
+    top: -90px;
+    right: 0px;
   }
 }
 .page-title {
@@ -392,8 +389,15 @@ footer {
 }
 .services-info {
   max-width: 50%;
-  & p {
+  & li,
+  b {
     color: $text-light;
+  }
+  & b {
+    font-weight: 500;
+  }
+  & ul {
+    list-style: none;
   }
 }
 .bg-title {
@@ -450,8 +454,12 @@ footer {
   margin-right: auto;
 }
 .my-sm {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.my-lg {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 /*end other/
 /*animations*/
@@ -468,11 +476,9 @@ footer {
 @keyframes landingFadeIn {
   from {
     opacity: 0;
-    transform: translateY(-100px);
   }
   to {
     opacity: 1;
-    transform: translateY(0px);
   }
 }
 
@@ -541,6 +547,7 @@ footer {
     & h2 {
       margin: 0 auto;
     }
+
     & .bg-title {
       margin: 1rem auto;
     }
@@ -582,7 +589,7 @@ footer {
     .landing-services {
       text-align: center;
       font-size: 1.2rem;
-      line-height: 1.6rem;
+      line-height: 1.8rem;
     }
   }
   footer {

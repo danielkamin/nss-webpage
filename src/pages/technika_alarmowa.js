@@ -5,6 +5,25 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import ServicesContact from "../components/ServicesComponents/servicesContact"
 import ServicesInfo from "../components/ServicesComponents/servicesInfo"
+const TechnikaContent = (
+  <p>
+    <h4>W RAMACH ZABEZPIECZENIA TECHNICZNEGO</h4><br/>
+    <b>Proponujemy projektowanie i wykonanie:</b>
+    <ul>
+      <li>– systemów alarmowych</li>
+      <li>– telewizji przemysłowej</li>
+      <li>– kontroli dostępu</li>
+      <li>– innych instalacji niskoprądowych</li>
+    </ul><br/>
+    <b>Zapewniamy:</b>
+    <ul>
+      <li>– konserwację w/w systemów</li>
+      <li>– wysoką jakość użytego sprzętu</li>
+      <li>– profesjonalny montaż</li>
+      <li>– staranność i dokładność w wykonaniu usługi</li>
+    </ul>
+  </p>
+)
 
 const AlarmyPage = ({data})=>(
     <Layout>
@@ -16,7 +35,7 @@ const AlarmyPage = ({data})=>(
           <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="Technika alarmowa" />
         </div>
         <div className="services-content">
-            <ServicesInfo/>
+            <ServicesInfo content={TechnikaContent}/>
             <ServicesContact 
             name="Jakub Kamiński" 
             email="jakub.kaminski@nssystemy.pl" 

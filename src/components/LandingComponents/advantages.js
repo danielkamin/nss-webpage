@@ -1,7 +1,7 @@
 import React from 'react'
 const Advantages = (
     <div className='advantages'>
-        <div className="page-title sm-header"> <h2 >Atuty współpracy z nami</h2></div>
+        <div className="page-title sm-header my-lg"> <h2 >Atuty współpracy z nami</h2></div>
         <ul className="advantages-list">
             <li><h4>SKUTECZNE ROZWIAZANIA</h4>
             <p>- doswiadzczenie w zakresie pelnionych uslug<br/>

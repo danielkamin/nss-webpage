@@ -6,6 +6,33 @@ import Img from "gatsby-image"
 import ServicesContact from "../components/ServicesComponents/servicesContact"
 import ServicesInfo from "../components/ServicesComponents/servicesInfo"
 
+const OchronaContent =(
+  <p>
+    <h4>W RAMACH OCHRONY FIZYCZNEJ</h4><br/>
+    <b>Proponujemy:</b>
+    <ul>
+      <li>– ochronę fizyczną obiektów</li>
+      <li>– obsługę recepcji</li>
+      <li>– ochronę fizyczną poprzez mobilne zestawy monitoringu TV</li>
+    </ul><br/>
+    <b>Zapewniamy:</b>
+    <ul>
+      <li>– prace pod stałym nadzorem Centrum NS</li>
+      <li>– łączność radiową w wydzielonym paśmie</li>
+      <li>– dowolne godziny pracy</li>
+      <li>– wykwalifikowanych pracowników</li>
+      <li>– jednolite umundurowanie</li>
+    </ul><br/>
+    <b>Obsługujemy:</b>
+    <ul>
+      <li>– firmy</li>
+      <li>– zakłady produkcyjne</li>
+      <li>– osiedla mieszkaniowe</li>
+      <li>– place budów</li>
+    </ul>
+  </p>
+)
+
 const OchronaPage = ({data})=>(
     <Layout>
         <SEO title="Ochrona Fizyczna"/>
@@ -14,7 +41,7 @@ const OchronaPage = ({data})=>(
             <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="Ochrona fizyczna"/>
         </div>
         <div className="services-content">
-            <ServicesInfo/>
+            <ServicesInfo content={OchronaContent}/>
             <ServicesContact 
             name="Marek Walesiuk" 
             email="marek.walesiuk@nssystemy.pl" 

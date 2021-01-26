@@ -5,6 +5,31 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import ServicesContact from "../components/ServicesComponents/servicesContact"
 import ServicesInfo from "../components/ServicesComponents/servicesInfo"
+
+const SprzatanieContent =(
+  <p>
+  <h4>W RAMACH USŁUG PORZĄDKOWYCH</h4><br/>
+  <b>Proponujemy:</b>
+  <ul>
+    <li>– sprzątanie powierzchni biurowych</li>
+    <li>– sprzątanie powierzchni produkcyjnych i magazynowych</li>
+    <li>– obsługa terenów zewnętrznych</li>
+    <li>– czyszczenie i akrylowanie posadzek</li>
+    <li>– sprzątanie po ukończonych budowach i remontach</li>
+    <li>– mycie elewacji, prace na wysokościach</li>
+    <li>– zarządzanie nieruchomościami</li>
+  </ul><br/>
+  <b>Obsługujemy:</b>
+  <ul>
+    <li>– biura</li>
+    <li>– zakłady produkcyjne</li>
+    <li>– placówki medyczne</li>
+    <li>– placówki edukacyjne</li>
+    <li>– osiedla mieszkaniowe</li>
+    <li>– inne</li>
+  </ul>
+  </p>
+)
 const SprzataniePage = ({data})=>(
     <Layout>
         <SEO title="Usługi porządkowe"/>
@@ -13,7 +38,7 @@ const SprzataniePage = ({data})=>(
             <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="Usługi porządkowo czystościowe"/>
         </div>
         <div className="services-content">
-            <ServicesInfo/>
+            <ServicesInfo content={SprzatanieContent}/>
             <ServicesContact 
             name="Natalia Reńsko" 
             email="natalia.renko@nssystemy.pl" 
