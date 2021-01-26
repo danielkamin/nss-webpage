@@ -40,9 +40,9 @@ const SprzataniePage = ({data})=>(
         <div className="services-content">
             <ServicesInfo content={SprzatanieContent}/>
             <ServicesContact 
-            name="Natalia Reńsko" 
+            name="Natalia Reńko" 
             email="natalia.renko@nssystemy.pl" 
-            phoneNumber="792792342"
+            phoneNumber="792 792 342"
             title="Koordynator UPC"/>
         </div>
     </Layout>

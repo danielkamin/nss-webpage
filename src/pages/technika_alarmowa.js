@@ -39,7 +39,7 @@ const AlarmyPage = ({data})=>(
             <ServicesContact 
             name="Jakub Kamiński" 
             email="jakub.kaminski@nssystemy.pl" 
-            phoneNumber="693223039"
+            phoneNumber="693 223 039"
             title="Manager DZT"/>
         </div>
     </Layout>

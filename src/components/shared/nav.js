@@ -2,7 +2,12 @@ import { Link } from "gatsby"
 import React, { useRef,useState,useEffect } from "react"
 import nssystemy_poziome from "../../images/nssystemy-poziome.svg"
 const Nav = ()=>{
-    const [documentBody,setDocumentBody] = useState(document.querySelector('body'))
+    const [documentBody,setDocumentBody] = useState()
+    useEffect(()=>{
+        if(document!==undefined){
+            setDocumentBody(document.querySelector('body'))
+        } 
+    },[])
     const list = useRef()
     const burger = useRef()
     const openMenu=()=>{

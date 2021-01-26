@@ -12,9 +12,9 @@ const KontaktPage = ()=>(
                     <p>NORD SERWIS SYSTEMY SP. Z O.O.<br/>
                     Białystok 15-535<br/>
                     ul. Praw Kobiet 4<br/>
-                    85 888 00 05<br/>
-                    --drugi nr telefonu--<br/>
-                    biuro@nssystemy.pl
+                    <a href="tel:85 888 00 05">85 888 00 05</a><br/>
+                    <a href="tel:85 749 98 00">85 749 98 00</a><br/>
+                    <a href="mailto:biuro@nssystemy.pl">biuro@nssystemy.pl</a>
                     </p>
                 </div>
             </section>

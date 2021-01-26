@@ -9,7 +9,7 @@ import SubInfo from '../components/LandingComponents/subInfo'
 import ns from '../images/NS.svg'
 const IndexPage = () => (
   <Layout>
-    <SEO title="NS Systemy" />
+    <SEO title="NS Systemy" description="Monitoring Alarmy Ochrona Fizyczna Sprzątanie"/>
     <div className="landing-main">
       <section className="landing">
         <div className="landing-content">
