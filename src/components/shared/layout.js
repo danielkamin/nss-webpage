@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Footer  from './footer'
+import Footer from "./footer"
 import Nav from "./nav"
 import CookiesConsentBanner from "./cookiesConsentBanner"
 
@@ -22,8 +22,8 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
       </div>
-      <CookiesConsentBanner/>
-      <Footer/>
+      <CookiesConsentBanner />
+      <Footer />
     </>
   )
 }

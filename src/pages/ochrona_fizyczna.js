@@ -6,15 +6,17 @@ import Img from "gatsby-image"
 import ServicesContact from "../components/ServicesComponents/servicesContact"
 import ServicesInfo from "../components/ServicesComponents/servicesInfo"
 
-const OchronaContent =(
+const OchronaContent = (
   <p>
-    <h4>W RAMACH OCHRONY FIZYCZNEJ</h4><br/>
+    <h4>W RAMACH OCHRONY FIZYCZNEJ</h4>
+    <br />
     <b>Proponujemy:</b>
     <ul>
       <li>– ochronę fizyczną obiektów</li>
       <li>– obsługę recepcji</li>
       <li>– ochronę fizyczną poprzez mobilne zestawy monitoringu TV</li>
-    </ul><br/>
+    </ul>
+    <br />
     <b>Zapewniamy:</b>
     <ul>
       <li>– prace pod stałym nadzorem Centrum NS</li>
@@ -22,7 +24,8 @@ const OchronaContent =(
       <li>– dowolne godziny pracy</li>
       <li>– wykwalifikowanych pracowników</li>
       <li>– jednolite umundurowanie</li>
-    </ul><br/>
+    </ul>
+    <br />
     <b>Obsługujemy:</b>
     <ul>
       <li>– firmy</li>
@@ -33,33 +36,39 @@ const OchronaContent =(
   </p>
 )
 
-const OchronaPage = ({data})=>(
-    <Layout>
-        <SEO title="Ochrona Fizyczna"/>
-        <div className="banner">
-        <div className="page-title lg-header"><h2>Ochrona Fizyczna</h2></div>
-            <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="Ochrona fizyczna"/>
-        </div>
-        <div className="services-content">
-            <ServicesInfo content={OchronaContent}/>
-            <ServicesContact 
-            name="Marek Walesiuk" 
-            email="marek.walesiuk@nssystemy.pl" 
-            phoneNumber="733 414 464"
-            title="Koordynator Ochrony"/>
-        </div>
-    </Layout>
+const OchronaPage = ({ data }) => (
+  <Layout>
+    <SEO title="Ochrona Fizyczna" />
+    <div className="banner">
+      <div className="page-title lg-header">
+        <h2>Ochrona Fizyczna</h2>
+      </div>
+      <Img
+        fluid={data.placeholderImage.childImageSharp.fluid}
+        alt="Ochrona fizyczna"
+      />
+    </div>
+    <div className="services-content">
+      <ServicesInfo content={OchronaContent} />
+      <ServicesContact
+        name="Piotr Klimiuk"
+        email="piotr.klimiuk@nssystemy.pl"
+        phoneNumber="733 414 464"
+        title="Manager Ochrony"
+      />
+    </div>
+  </Layout>
 )
-export default OchronaPage;
+export default OchronaPage
 
 export const query = graphql`
-query {
-  placeholderImage: file(relativePath: { eq: "ochrona.jpg" }) {
-    childImageSharp {
-      fluid(maxWidth: 2000) {
-        ...GatsbyImageSharpFluid
+  query {
+    placeholderImage: file(relativePath: { eq: "ochrona.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }
-}
 `

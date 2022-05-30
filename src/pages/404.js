@@ -6,7 +6,7 @@ const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
     <div className="not-found">
-      <img src={notFound}/>
+      <img src={notFound} />
     </div>
   </Layout>
 )

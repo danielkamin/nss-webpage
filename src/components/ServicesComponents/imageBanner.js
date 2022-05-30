@@ -2,8 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const ImageBanner=({name})=>{
-    const data = useStaticQuery(graphql`
+const ImageBanner = ({ name }) => {
+  const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
         childImageSharp {
@@ -14,6 +14,6 @@ const ImageBanner=({name})=>{
       }
     }
   `)
-    return (<Img fluid={name}/>)
+  return <Img fluid={name} />
 }
 export default ImageBanner
