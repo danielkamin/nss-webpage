@@ -47,8 +47,8 @@ const SprzataniePage = ({ data }) => (
     <div className="services-content">
       <ServicesInfo content={SprzatanieContent} />
       <ServicesContact
-        name="Natalia Reńko"
-        email="natalia.renko@nssystemy.pl"
+        name="Piotr Chmura"
+        email="piotr.chmura@nssystemy.pl"
         phoneNumber="792 792 342"
         title="Koordynator UPC"
       />
